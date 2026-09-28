@@ -1,23 +1,65 @@
 aid: bepro11
+
 name: Bepro11
-description: 'Bepro11 is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://framerusercontent.com/assets/EYkE3vvo8T376872mkjmJkD43E.png
+
+description: 'Bepro11, operating under the brand BEPRO, provides analysis software, cameras, and data solutions for sports teams. Their platform enables recording, analysis, and collaboration on match footage, offering products such as fixed and portable sports cameras, data APIs, and bespoke data services. The company targets professional and amateur sports organizations seeking comprehensive performance analytics and video management tools.'
+
 url: https://raw.githubusercontent.com/api-evangelist/bepro11/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-27 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-27'
+
 modified: '2026-09-27'
+
 tags:
+- Sports
+- Analytics
+- Video
+- Data
+- Software
 - Company
-apis: []
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/bepro11-hosts.yml
+- type: TermsOfService
+  url: https://terms-of-use.bepro.ai/
+- type: Support
+  url: https://bepro.ai/help-center/intro
+- type: DomainSecurity
+  url: security/bepro11-domain-security.yml
 - type: Website
-  url: https://equityzen.com/company/bepro11
+  url: https://bepro.ai
+
+apis: []
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  detail: No OpenAPI, AsyncAPI, GraphQL, or other machine‑readable contract was found at the API host.
+  evidence:
+    - url: https://api.bepro.ai/openapi.json
+      status: 404
+  checked: '2026-09-27'
+x-enrichment:
+  date: '2026-09-27'
+  status: enriched
+  artifacts_added: 5
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
